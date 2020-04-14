@@ -61,7 +61,7 @@ def main(yolo):
         w = int(video_capture.get(3))
         h = int(video_capture.get(4))
         fourcc = cv2.VideoWriter_fourcc(*'MJPG')
-        out = cv2.VideoWriter(args['output'], fourcc, 15, (w, h))
+        out = cv2.VideoWriter('.output/test_output.avi', fourcc, 15, (w, h))
         list_file = open('detection.txt', 'w')
         frame_index = -1
 
