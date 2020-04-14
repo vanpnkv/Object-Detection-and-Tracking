@@ -24,8 +24,8 @@ backend.clear_session()
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--input",help="path to input video", default = "./test_video/det_t1_video_00315_test.avi")
 ap.add_argument("-c", "--class",help="name of class", default = "person")
-ap.add_argument("-o", "--output",help="path to output video", default = "./output/output_test.avi")
-ap.add_argument("-d", "--dontshow",help="dont show video window", default = "0")
+#ap.add_argument("-o", "--output",help="path to output video", default = "./output/output_test.avi")
+#ap.add_argument("-d", "--dontshow",help="dont show video window", default = "0")
 args = vars(ap.parse_args())
 
 pts = [deque(maxlen=30) for _ in range(9999)]
